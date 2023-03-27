@@ -11,12 +11,61 @@ const getRandomCell = () => {
   return cells[index];
 };
 
+let mole1 = new Image('120','100');
+mole1.src = 'https://i.ibb.co/SxgyCw3/raimbowmole.png'
+let mole2 = new Image('120','100');
+mole2.src = 'https://i.ibb.co/NTvFtMH/yellowglimole.png'
+let mole3 = new Image('120','100');
+mole3.src = 'https://i.ibb.co/6X0BJH0/glossbowmole.png'
+let mole4 = new Image('120','100');
+mole4.src = 'https://i.ibb.co/jRzzhdz/pinkmole.png'
+let mole5 = new Image('120','100');
+mole5.src = 'https://i.ibb.co/XkVSL8T/rainbowglitz.png'
+let mole6 = new Image('120','100');
+mole6.src = 'https://i.ibb.co/mJjcrPC/yellowglow.png'
+let mole7 = new Image('120','100');
+mole7.src = 'https://i.ibb.co/5c6PQZL/purpglitz.png'
+let mole8 = new Image('120','100');
+mole8.src = 'https://i.ibb.co/hR2Hrvw/glowymole.png'
+let mole9 = new Image('120','100');
+mole9.src = 'https://i.ibb.co/dL7WVxF/pinkpurpmole.png'
+let mole10 = new Image('120','100');
+mole10.src = 'https://i.ibb.co/cr6WCmv/foammole.png'
+let mole11 = new Image('120','100');
+mole11.src = 'https://i.ibb.co/Jj1zZt5/leopardmole.png'
+let mole12 = new Image('120','100');
+mole12.src = 'https://i.ibb.co/9qbwTgW/moleblue.png'
+let mole13 = new Image('120','100');
+mole13.src = 'https://i.ibb.co/vVtqq7w/purpglittermole.png'
+let mole14 = new Image('120','100');
+mole14.src = 'https://i.ibb.co/B4MyphJ/molefinglossrainbow.png'
+
+
+let imgArr = [];
+imgArr.push(mole1)
+imgArr.push(mole2)
+imgArr.push(mole3)
+imgArr.push(mole4)
+imgArr.push(mole5)
+imgArr.push(mole6)
+imgArr.push(mole7)
+imgArr.push(mole8)
+imgArr.push(mole9)
+imgArr.push(mole10)
+imgArr.push(mole11)
+imgArr.push(mole12)
+imgArr.push(mole13)
+imgArr.push(mole14)
+
+console.log(imgArr)
+
 
 
 const showMole = () => {
   const cell = getRandomCell();
   button.style.display = 'none'
   gameEnd.style.display = 'none'
+  
   cell.classList.add("mole");
   
   setTimeout(() => {
@@ -56,7 +105,7 @@ const countdown = () => {
       gameEnd.textContent = `time's up! you whacked ${score} moles!`;
     return;
     }
-    document.querySelector(".play-again").addEventListener("click", resetGame);
+    button.addEventListener("click", resetGame);
     return;
   }
   clock.textContent = timeLeft;

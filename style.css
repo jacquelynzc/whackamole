@@ -10,14 +10,14 @@ table {
     display: flexbox;
     margin: auto;
     justify-content: center;
-    background-color: green;
+    background-color: rgb(163, 255, 163);
     border: 2px #000 solid;
 }
 
 .wrapper {
     display: grid; 
-    margin-top: -13em;
-    grid-template-columns: 10em 1fr 50% 1fr 10em; 
+    margin-top: -9em;
+    grid-template-columns: 8em 1fr 50% 1fr 8em; 
     grid-template-rows: 4em 10fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
@@ -38,6 +38,18 @@ table {
     font-family: 'Righteous', cursive;
 }
 
+#right {
+    transform-origin: top right;
+    margin-top: -4.2em;
+    transform: rotate(90deg);
+    font-size: 10rem;
+    grid-column: 5;
+    grid-row: 1;
+    grid-auto-flow: column;
+    font-family: 'Righteous', cursive;
+}
+
+
 container {
     box-sizing: border-box;
 width: 100%;
@@ -57,7 +69,7 @@ width: 100%;
   }
   
   .mole {
-    background-image: url('https://i.ibb.co/M8dX3DP/molefin.png');
+    background-image: url('/purpglittermole.png');
     background-size: 120px;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +85,7 @@ width: 100%;
     color: rgb(11, 255, 125);
     margin: 0 auto;
     border: 5px solid rgb(0, 0, 0);
-    background-color: #707070;
+    background-color: #adadad;
     border-radius: 5px;
     text-align: center;
     width: 79%;
@@ -104,7 +116,7 @@ button  {
     text-align: center;
     justify-content: center;
     border: 5px solid rgb(0, 0, 0);
-    background-color: #707070;
+    background-color: #adadad;
 }
 
 button:hover {
