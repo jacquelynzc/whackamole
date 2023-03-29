@@ -1,125 +1,262 @@
+* {
+  cursor: url("/mallet2.png"), auto !important;
+}
+
+body {
+  background-color: #ffd3eb;
+  overflow-x: hidden;
+}
 
 div {
-    display: flex;
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 
 table {
-    display: flexbox;
-    margin: auto;
-    justify-content: center;
-    background-color: rgb(163, 255, 163);
-    border: 2px #000 solid;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(163, 255, 163);
+  border: 5px #000 double;
+  border-radius: 15px;
+  width: 80vw;
+  height: 80vh;
 }
 
+
 .wrapper {
-    display: grid; 
-    margin-top: -9em;
-    grid-template-columns: 8em 1fr 50% 1fr 8em; 
-    grid-template-rows: 4em 10fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . . . ."
-      ". . . . ."
-      ". . . . ."; 
-      }
-      
+  display: grid; 
+  position: absolute;
+  grid-template-columns: 15% 70% 15%; 
+  grid-template-rows: 20% 80% 10%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . "
+    ". . . "
+    ". . . "; 
+    }
+    
 
 
 #left {
-    transform-origin: top left;
-    transform: rotate(-90deg);
-    font-size: 10rem;
-    grid-column: 1;
-    grid-row: 1;
-    grid-auto-flow: column;
-    font-family: 'Righteous', cursive;
+  transform-origin: top left;
+  text-shadow: -10px -10px #000;
+  color: #fff;
+  transform: rotate(-90deg);
+  font-size: 9rem;
+  grid-column: 1;
+  align-content: start;
+  grid-row: 1, 3; 
+  font-family: 'Righteous', cursive;
+  position: fixed;
+  margin-top: -10vi;
+  letter-spacing: -2px;
 }
 
 #right {
-    transform-origin: top right;
-    margin-top: -4.2em;
-    transform: rotate(90deg);
-    font-size: 10rem;
-    grid-column: 5;
-    grid-row: 1;
-    grid-auto-flow: column;
-    font-family: 'Righteous', cursive;
+  transform-origin: top right;
+  text-shadow: -10px -10px #000;
+  color: #fff;
+  margin-left: 47.5vi;
+  margin-top: -7vi;
+  transform: rotate(90deg);
+  font-size: 9.5rem;
+  position: fixed;
+  grid-column: 3;
+  grid-row: 1, 3;
+  font-family: 'Righteous', cursive;
+  letter-spacing: -2px;
 }
 
-
-container {
-    box-sizing: border-box;
-width: 100%;
-}
 
 .cell {
-    width: 20vw;
-    height: 20vh;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    background-image: url('https://i.ibb.co/1sytDmb/moleholefin.png');
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-  }
-  
-  .mole {
-    background-image: url('/purpglittermole.png');
-    background-size: 120px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
- .time-up {
-    margin: 0 auto;
-    justify-content: center;
-  }
+  width: 20vw;
+  height: 20vh;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  background-image: url('https://i.ibb.co/1sytDmb/moleholefin.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}
 
-  .time-left, .time-up {
-    font-family: 'VT323', monospace;
-    color: rgb(11, 255, 125);
-    margin: 0 auto;
-    border: 5px solid rgb(0, 0, 0);
-    background-color: #adadad;
-    border-radius: 5px;
-    text-align: center;
-    width: 79%;
+.mole {
+  background-image: url('moles/mole1.png');
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.time-up {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.time-left, .time-up {
+  font-family: 'VT323', monospace;
+  text-align: center;
+  /* padding: 10px; */
+}
+
+.time-left, .time-up, button {
+  border: 2px #000 double;
+  background-image: url("moles/overlay.png");
+  background-size: cover;
+  font-family: 'VT323', monospace;
+  background-color: rgb(131, 131, 131);
+  display: block;
+  width: 80vi;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+
+  box-sizing: border-box; /* include padding and border in element's total width */
 }
 
 .time-up {
-    display: none;
-    font-size: 2rem;
-    padding: 10px;
-    width: 80%;
+  display: none;
+  font-size: 2rem;
+  color: #f1b3fb;
+  font-family: 'Playfair Display', serif;
+ 
+
 }
 
 .time-left {
-    justify-content: center;
-    width: 73.3%;
-    padding: 60px;
-    font-size: 5rem;
+  font-size: 6rem;
+  padding: 30px;
 }
 
-button  {
-    font-family: 'VT323', monospace;
-    color: rgb(11, 255, 125);
-    display: flex;
-    margin: 0 auto;
-    width: 82%;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    justify-content: center;
-    border: 5px solid rgb(0, 0, 0);
-    background-color: #adadad;
+.start {
+  letter-spacing: .5vw;
+  font-size: 3rem;
+
+
+}
+
+.replay {
+  font-family: 'Playfair Display', serif;
+  margin-block-end: 7px;
+  font-size: 1.25rem;
+
+
+}
+
+
+/* WHACKAMOLE on either side of the game */
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+	box-shadow: 0px 10px 10px #57aba7, 0px -10px 25px #a6fffa, inset 0px -5px 10px #57aba7, inset 0px 5px 10px #a6fffa;
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+  padding: 10 px;
+	/* transition: 500ms; */
+  background-color: rgb(136, 135, 135);
 }
 
 button:hover {
-    background-color: #525151;
+  animation: hueRotation 1s linear infinite;
 }
-/* WHACKAMOLE on either side of the game */
+
+.mole:hover {
+  animation: hueRotation 1s linear infinite, shake 0.75s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(5px, 1px) rotate(0deg); }
+  10% { transform: translate(5px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(6px, 2px) rotate(0deg); }
+  40% { transform: translate(-3px, -1px) rotate(1deg); }
+  50% { transform: translate(3px, 2px) rotate(-1deg); }
+  60% { transform: translate(-4px, 1px) rotate(0deg); }
+  70% { transform: translate(2px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(4px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.time-left, button {
+  color: rgb(163, 255, 163);
+}
+
+@keyframes hueRotation {
+  to {filter: hue-rotate(360deg);}
+}  
+
+button:focus {
+	outline: none;
+}
+
+
+
+/* For screens less than 1000px */
+@media screen and (max-width: 900px) {
+
+  #right {
+    display: none;
+  }
+  #left {
+    font-size: 6rem;
+    margin-top: -25vi;
+  }
+
+}
+
+/* For screens less than 600px */
+@media screen and (max-width: 600px) {
+
+
+  #left, #right {
+    font-size: 7rem;
+  }
+
+
+  .time-left {
+    font-size: 3rem;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+
+  #left, #right {
+    font-size: 6rem;
+    margin-top: -6vi;
+  }
+
+  #right {
+    padding-left: 20%;
+  }
+
+  .time-left {
+    font-size: 3rem;
+    padding: 30px;
+  }
+}
+
+
+
