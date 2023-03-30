@@ -60,7 +60,7 @@ table {
   transform-origin: top right;
   text-shadow: -10px -10px #000;
   color: #fff;
-  margin-left: 47.5vi;
+  margin-left: 48.5vi;
   margin-top: -7vi;
   transform: rotate(90deg);
   font-size: 9.5rem;
@@ -93,12 +93,6 @@ table {
 }
 
 
-
-.time-up {
-  margin: 0 auto;
-  justify-content: center;
-}
-
 .time-left, .time-up {
   font-family: 'VT323', monospace;
   text-align: center;
@@ -118,16 +112,15 @@ table {
   border-radius: 15px;
   text-align: center;
   justify-content: center;
-
-  box-sizing: border-box; /* include padding and border in element's total width */
+  box-sizing: border-box;
 }
 
 .time-up {
   display: none;
   font-size: 2rem;
   color: #f1b3fb;
-  font-family: 'Playfair Display', serif;
- 
+  margin: 0 auto;
+  justify-content: center;
 
 }
 
@@ -144,9 +137,8 @@ table {
 }
 
 .replay {
-  font-family: 'Playfair Display', serif;
   margin-block-end: 7px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 
 
 }
@@ -168,8 +160,7 @@ button {
   display: flex;
   justify-content: center;
   align-content: center;
-	box-shadow: 0px 10px 10px #57aba7, 0px -10px 25px #a6fffa, inset 0px -5px 10px #57aba7, inset 0px 5px 10px #a6fffa;
-  font-family: 'VT323', monospace;
+	/* box-shadow: 0px 10px 10px #57aba7, 0px -10px 25px #a6fffa, inset 0px -5px 10px #57aba7, inset 0px 5px 10px #a6fffa; */
   font-size: 2rem;
   padding: 10 px;
 	/* transition: 500ms; */
@@ -177,7 +168,7 @@ button {
 }
 
 button:hover {
-  animation: hueRotation 1s linear infinite;
+  animation: hueRotation .5s linear infinite;
 }
 
 .mole:hover {
