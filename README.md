@@ -1,2 +1,11 @@
-# whack-a-mole
-# whack-a-mole
+# Whack-a-mole
+
+
+## A whack game
+////////////////////////////////////////////////////////////////////
+
+
+
+preview:
+
+![game preview](preview.png)
