@@ -1,6 +1,6 @@
 const cells = document.querySelectorAll(".cell");
 let score = 0;
-let timeLeft = 10;
+let timeLeft = 20;
 let gameEnd = document.querySelector(".time-up")
 let button = document.querySelector(".replay")
 let points = document.querySelector(".score")
@@ -9,7 +9,7 @@ let moleC = document.querySelector('.mole')
 let start = document.querySelector('.start')
 
 
-// gives a random number between 0 and the length of the grid cells
+// gives a random number between 0 and the length of the grid cells multiplied by 0.8 to make it more random
 const getRandomCell = () => {
   const index = Math.floor(Math.random() * cells.length * 0.8);
   return cells[index];
@@ -148,7 +148,7 @@ const countdown = () => {
 
 const resetGame = () => {
   score = 0;
-  timeLeft = 10;
+  timeLeft = 20;
   showMole();
   countdown();
   gameEnd.textContent = "";
