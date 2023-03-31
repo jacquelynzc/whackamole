@@ -5,6 +5,20 @@
 body {
   background-color: #ffd3eb;
   overflow-x: hidden;
+  justify-content: center;
+}
+
+#top {
+  font-family: 'Righteous', cursive;
+  text-shadow: -20px -15px #000;
+  color: #ffd3eb;
+  font-size: 10rem;
+  white-space: nowrap;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 25% 0 25%;
+
 }
 
 div {
@@ -28,48 +42,43 @@ table {
 
 
 .wrapper {
-  display: grid; 
-  position: absolute;
-  grid-template-columns: 15% 70% 15%; 
-  grid-template-rows: 20% 80% 10%; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". . . "
-    ". . . "
-    ". . . "; 
+  width: calc(80vw + 200px); /* adjust width to fit the table and headers */
+  height: 80vh;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
     }
     
 
 
 #left {
-  transform-origin: top left;
-  text-shadow: -10px -10px #000;
-  color: #fff;
-  transform: rotate(-90deg);
-  font-size: 9rem;
-  grid-column: 1;
-  align-content: start;
-  grid-row: 1, 3; 
   font-family: 'Righteous', cursive;
-  position: fixed;
-  margin-top: -5vi;
-  margin-left: -1%;
-  letter-spacing: -2px;
+  text-shadow: -20px -10px #000;
+  color: #ffd3eb;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  font-size: 8rem;
+  white-space: nowrap;
+  position: absolute;
+  display: flex;
+  /* margin: -20px -10px; */
+  top: 800px;
+  left: 20px; 
 }
 
 #right {
-  transform-origin: top right;
-  text-shadow: -10px -10px #000;
-  color: #fff;
-  margin-left: 39.8%;
-  margin-top: -5vi;
-  transform: rotate(90deg);
-  font-size: 9rem;
-  position: fixed;
-  grid-column: 3;
-  grid-row: 1, 3;
-  font-family: 'Righteous', cursive;
+  text-shadow: -20px -10px #000;
+  color: #ffd3eb;
   letter-spacing: -2px;
+  font-family: 'Righteous', cursive;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    font-size: 8rem;
+    white-space: nowrap;
+    position: absolute;
+    top: 800px;
+    right: 20px; 
 }
 
 
@@ -203,17 +212,39 @@ button:focus {
 	outline: none;
 }
 
+#hidden {
+  display: none;
+}
 
 
-/* For screens less than 1000px */
+
 @media screen and (max-width: 900px) {
 
-  #right {
+  #right, #left {
     display: none;
   }
-  #left {
+
+  #top {
     font-size: 6rem;
-    margin-top: -25vi;
+    text-shadow: -10px -10px #000;
+  }
+
+  body {
+    height: 100vh;
+    max-height: 100%;
+    overscroll-behavior-y: none;
+  }
+
+  #hidden {
+    display: flex;
+    text-shadow: -10px -10px #000;
+    color: #ffd3eb;
+    letter-spacing: -2px;
+    font-family: 'Righteous', cursive;
+      font-size: 6rem;
+      position: relative;
+      margin: 0 auto;
+      justify-content: center;
   }
 
 }
@@ -223,29 +254,42 @@ button:focus {
 
 
   #left, #right {
-    font-size: 7rem;
+    display: none;
   }
 
+  #top {
+    font-size: 5rem;
+    text-shadow: -10px -10px #000;
+  }
 
   .time-left {
     font-size: 3rem;
     padding: 30px;
   }
-}
-
-@media screen and (max-height: 600px) {
-
-  #left, #right {
-    font-size: 6rem;
-    margin-top: -6vi;
+  #hidden {
+    display: flex;
+    color: #ffd3eb;
+    text-shadow: -10px -10px #000;
+    color: #fff;
+    letter-spacing: -2px;
+    font-family: 'Righteous', cursive;
+      font-size: 5rem;
+      position: relative;
+      margin: 0 auto;
+      justify-content: center;
   }
 
-  #right {
-    padding-left: 20%;
+}
+@media screen and (max-height: 600px) {
+
+
+
+ #left, #right {
+    display: none;
   }
 
   .time-left {
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 30px;
   }
 }
