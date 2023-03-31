@@ -11,79 +11,79 @@ let start = document.querySelector('.start')
 
 // gives a random number between 0 and the length of the grid cells multiplied by 0.8 to make it more random
 const getRandomCell = () => {
-  const index = Math.floor(Math.random() * cells.length * 0.8);
+  const index = Math.floor(Math.random() * cells.length);
   return cells[index];
-};
+}
 
 // defining the mole picture elements 
 let mole1 = new Image('120','100');
-mole1.src = '/moles/mole14.png'
+mole1.src = 'moles/mole14.png'
 let mole2 = new Image('120','100');
-mole2.src = '/moles/mole13.png'
+mole2.src = 'moles/mole13.png'
 let mole3 = new Image('120','100');
-mole3.src = '/moles/mole12.png'
+mole3.src = 'moles/mole12.png'
 let mole4 = new Image('120','100');
-mole4.src = '/moles/mole11.png'
+mole4.src = 'moles/mole11.png'
 let mole5 = new Image('120','100');
-mole5.src = '/moles/mole10.png'
+mole5.src = 'moles/mole10.png'
 let mole6 = new Image('120','100');
-mole6.src = '/moles/mole9.png'
+mole6.src = 'moles/mole9.png'
 let mole7 = new Image('120','100');
-mole7.src = '/moles/mole8.png'
+mole7.src = 'moles/mole8.png'
 let mole8 = new Image('120','100');
-mole8.src = '/moles/mole7.png'
+mole8.src = 'moles/mole7.png'
 let mole9 = new Image('120','100');
-mole9.src = '/moles/mole6.png'
+mole9.src = 'moles/mole6.png'
 let mole10 = new Image('120','100');
-mole10.src = '/moles/mole5.png'
+mole10.src = 'moles/mole5.png'
 let mole11 = new Image('120','100');
-mole11.src = '/moles/mole4.png'
+mole11.src = 'moles/mole4.png'
 let mole12 = new Image('120','100');
-mole12.src = '/moles/mole3.png'
+mole12.src = 'moles/mole3.png'
 let mole13 = new Image('120','100');
-mole13.src = '/moles/mole2.png'
+mole13.src = 'moles/mole2.png'
 let mole14 = new Image('120','100');
-mole14.src = '/moles/mole1.png'
+mole14.src = 'moles/mole1.png'
 let mole15 = new Image('120','100')
-mole15.src = '/moles/conzer.png'
+mole15.src = 'moles/conzer.png'
 let mole16 = new Image('120','100');
-mole16.src = '/moles/mole15.png'
+mole16.src = 'moles/mole15.png'
 let mole17 = new Image('120','100');
-mole17.src = '/moles/mole16.png'
+mole17.src = 'moles/mole16.png'
 let mole18 = new Image('120','100');
-mole18.src = '/moles/mole17.png'
+mole18.src = 'moles/mole17.png'
 let mole19 = new Image('120','100');
-mole19.src = '/moles/mole18.png'
+mole19.src = 'moles/mole18.png'
 let mole20 = new Image('120','100');
-mole20.src = '/moles/mole19.png'
+mole20.src = 'moles/mole19.png'
 let mole21 = new Image('120','100');
-mole21.src = '/moles/mole20.png'
+mole21.src = 'moles/mole20.png'
 let mole22 = new Image('120','100');
-mole22.src = '/moles/mole21.png'
+mole22.src = 'moles/mole21.png'
 let mole23 = new Image('120','100');
-mole23.src = '/moles/mole22.png'
+mole23.src = 'moles/mole22.png'
 let mole24 = new Image('120','100');
-mole24.src = '/moles/mole23.png'
+mole24.src = 'moles/mole23.png'
 let mole25 = new Image('120','100');
-mole25.src = '/moles/mole24.png'
+mole25.src = 'moles/mole24.png'
 let mole26 = new Image('120','100');
-mole26.src = '/moles/mole25.png'
+mole26.src = 'moles/mole25.png'
 let mole27 = new Image('120','100');
-mole27.src = '/moles/mole26.png'
+mole27.src = 'moles/mole26.png'
 let mole28 = new Image('120','100');
-mole28.src = '/moles/mole27.png'
+mole28.src = 'moles/mole27.png'
 let mole29 = new Image('120','100');
-mole29.src = '/moles/mole28.png'
+mole29.src = 'moles/mole28.png'
 let mole30 = new Image('120','100');
-mole30.src = '/moles/mole29.png'
+mole30.src = 'moles/mole29.png'
 let mole32 = new Image('120','100');
-mole32.src = '/moles/mole30.png'
+mole32.src = 'moles/mole30.png'
 let mole33 = new Image('120','100');
-mole33.src = '/moles/mole32.png'
+mole33.src = 'moles/mole32.png'
 let mole34 = new Image('120','100');
-mole34.src = '/moles/mole34.png'
+mole34.src = 'moles/mole34.png'
 let mole36 = new Image('120','100');
-mole36.src = '/moles/mole36.png'
+mole36.src = 'moles/mole36.png'
 
 // the mole array
 let imgArr = [mole1, mole3, mole4, mole5, mole6, mole7, mole8, 
@@ -104,8 +104,8 @@ const showMole = () => {
   cell.style.backgroundImage = `url(${imgArr[rng].src})`
   // removes mole and resets the background image of the cell
   setTimeout(() => {
-    cell.style.backgroundImage = `url("/moles/moleholefin.png")`
     cell.classList.remove("mole");
+    cell.style.backgroundImage = `url("moles/moleholefin.png")`
     if (timeLeft > 0) {
       showMole();
     }

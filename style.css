@@ -53,6 +53,7 @@ table {
   font-family: 'Righteous', cursive;
   position: fixed;
   margin-top: -5vi;
+  margin-left: -1%;
   letter-spacing: -2px;
 }
 
@@ -60,10 +61,10 @@ table {
   transform-origin: top right;
   text-shadow: -10px -10px #000;
   color: #fff;
-  margin-left: 41.5vi;
+  margin-left: 39.8%;
   margin-top: -5vi;
   transform: rotate(90deg);
-  font-size: 9.5rem;
+  font-size: 9rem;
   position: fixed;
   grid-column: 3;
   grid-row: 1, 3;
