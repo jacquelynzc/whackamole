@@ -2,11 +2,34 @@
   cursor: url("/mallet2.png"), auto !important;
 }
 
+
+html,
 body {
-  background-color: #ffd3eb;
-  overflow-x: hidden;
-  justify-content: center;
+  height: 100%;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffd3eb;
+}
+
+.container {
+  position: relative;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 25% 0 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 #top {
   font-family: 'Righteous', cursive;
@@ -30,7 +53,7 @@ div {
 
 table {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
   justify-content: center;
   align-content: center;
   background-color: rgb(163, 255, 163);
@@ -44,10 +67,12 @@ table {
 .wrapper {
   width: calc(80vw + 200px); /* adjust width to fit the table and headers */
   height: 80vh;
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
+  margin: auto;
   align-items: center;
+  justify-content: space-between;
+  display: flexbox;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
     }
     
 
@@ -89,10 +114,11 @@ table {
   font-size: 30px;
   cursor: pointer;
   background-image: url('https://i.ibb.co/1sytDmb/moleholefin.png');
-  background-size: 60%;
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
+  border-radius: 10px;
 }
 
 .mole {
@@ -100,6 +126,8 @@ table {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 10px;
+
 }
 
 
@@ -224,9 +252,18 @@ button:focus {
     display: none;
   }
 
+  .container {
+    align-items: center;
+  }
+
+  .cell, .mole {
+    background-size: 90%;
+  }
+
   #top {
     font-size: 6rem;
     text-shadow: -10px -10px #000;
+    position: absolute;
   }
 
   body {
@@ -252,6 +289,9 @@ button:focus {
 /* For screens less than 600px */
 @media screen and (max-width: 600px) {
 
+  .container {
+    align-items: center;
+  }
 
   #left, #right {
     display: none;
@@ -262,6 +302,10 @@ button:focus {
     text-shadow: -10px -10px #000;
   }
 
+  .cell, .mole {
+    background-size: 90%;
+  }
+
   .time-left {
     font-size: 3rem;
     padding: 30px;
@@ -270,7 +314,6 @@ button:focus {
     display: flex;
     color: #ffd3eb;
     text-shadow: -10px -10px #000;
-    color: #fff;
     letter-spacing: -2px;
     font-family: 'Righteous', cursive;
       font-size: 5rem;
@@ -282,10 +325,33 @@ button:focus {
 }
 @media screen and (max-height: 600px) {
 
+  .cell, .mole {
+    background-size: 90%;
+  }
 
+  .container {
+    align-items: center;
+  }
 
  #left, #right {
     display: none;
+  }
+
+  #hidden {
+    display: flex;
+    color: #ffd3eb;
+    text-shadow: -10px -10px #000;
+    letter-spacing: -2px;
+    font-family: 'Righteous', cursive;
+      font-size: 5rem;
+      position: relative;
+      margin: 0 auto;
+      justify-content: center;
+  }
+
+  #top {
+    font-size: 5rem;
+    text-shadow: -10px -10px #000;
   }
 
   .time-left {
