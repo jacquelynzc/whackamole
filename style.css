@@ -27,7 +27,6 @@ body {
   height: 100%;
   border-radius: 20px;
   margin: 0 25% 0 25%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -35,7 +34,7 @@ body {
   font-family: 'Righteous', cursive;
   text-shadow: -20px -15px #000;
   color: #ffd3eb;
-  font-size: 10rem;
+  font-size: 12rem;
   white-space: nowrap;
   position:relative;
   display: flex;
@@ -88,8 +87,8 @@ table {
   position: absolute;
   display: flex;
   /* margin: -20px -10px; */
-  top: 800px;
-  left: 20px; 
+  top: 950px;
+  left: -5px; 
 }
 
 #right {
@@ -102,8 +101,8 @@ table {
     font-size: 8rem;
     white-space: nowrap;
     position: absolute;
-    top: 800px;
-    right: 20px; 
+    top: 950px;
+    right: 5px; 
 }
 
 
@@ -177,14 +176,9 @@ table {
 .replay {
   margin-block-end: 7px;
   font-size: 1.5rem;
-
-
 }
 
-
-/* WHACKAMOLE on either side of the game */
-
-.noselect {
+.mole, .cell, .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -198,7 +192,7 @@ button {
   display: flex;
   justify-content: center;
   align-content: center;
-	/* box-shadow: 0px 10px 10px #57aba7, 0px -10px 25px #a6fffa, inset 0px -5px 10px #57aba7, inset 0px 5px 10px #a6fffa; */
+	box-shadow: 0px 2px 2px #ffc6fd, 0px -2px 5px #ffc6fc, inset 0px -2px 2px #ffc6fd, inset 0px 2px 4px #ffc6fc;
   font-size: 2rem;
   padding: 10 px;
 	/* transition: 500ms; */
@@ -263,7 +257,6 @@ button:focus {
   #top {
     font-size: 6rem;
     text-shadow: -10px -10px #000;
-    position: absolute;
   }
 
   body {
