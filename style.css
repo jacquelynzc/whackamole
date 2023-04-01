@@ -34,7 +34,7 @@ body {
   font-family: 'Righteous', cursive;
   text-shadow: -20px -15px #000;
   color: #ffd3eb;
-  font-size: 12rem;
+  font-size: 10rem;
   white-space: nowrap;
   position:relative;
   display: flex;
@@ -255,7 +255,7 @@ button:focus {
   }
 
   #top {
-    font-size: 6rem;
+    font-size: 5rem;
     text-shadow: -10px -10px #000;
   }
 
@@ -271,9 +271,10 @@ button:focus {
     color: #ffd3eb;
     letter-spacing: -2px;
     font-family: 'Righteous', cursive;
-      font-size: 6rem;
+      font-size: 5rem;
       position: relative;
       margin: 0 auto;
+      padding-top: 5vi;
       justify-content: center;
   }
 
@@ -291,8 +292,8 @@ button:focus {
   }
 
   #top {
-    font-size: 5rem;
-    text-shadow: -10px -10px #000;
+    font-size: 3rem;
+    text-shadow: -5px -5px #000;
   }
 
   .cell, .mole {
@@ -306,10 +307,10 @@ button:focus {
   #hidden {
     display: flex;
     color: #ffd3eb;
-    text-shadow: -10px -10px #000;
+    text-shadow: 5px 5px #000;
     letter-spacing: -2px;
     font-family: 'Righteous', cursive;
-      font-size: 5rem;
+      font-size: 3rem;
       position: relative;
       margin: 0 auto;
       justify-content: center;
@@ -333,18 +334,18 @@ button:focus {
   #hidden {
     display: flex;
     color: #ffd3eb;
-    text-shadow: -10px -10px #000;
+    text-shadow: -5px -5px #000;
     letter-spacing: -2px;
     font-family: 'Righteous', cursive;
-      font-size: 5rem;
+      font-size: 3rem;
       position: relative;
       margin: 0 auto;
       justify-content: center;
   }
 
   #top {
-    font-size: 5rem;
-    text-shadow: -10px -10px #000;
+    font-size: 3rem;
+    text-shadow: 5px 5px #000;
   }
 
   .time-left {
